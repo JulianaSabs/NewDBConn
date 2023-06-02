@@ -1,0 +1,40 @@
+CREATE DATABASE acessobd;
+use acessobd;
+CREATE TABLE Estados(
+Codigo int NOT NULL,
+Nome varchar(50) NOT NULL,
+UF char(2) NOT NULL,
+constraint pk_Estados primary key(Codigo)
+);
+insert into Estados
+values (1,'Acre','AC');
+insert into Estados
+values (2,'Alagoas','AL');
+insert into Estados
+values (3,'Amapa','AP');
+insert into Estados
+values (4,'Amazonas','AM');
+insert into Estados
+values (5,'Bahia','BA');
+insert into Estados
+values (6,'Ceara','CE');
+insert into Estados
+values (7,'Distrito Federal','DF');
+insert into Estados
+values (8,'Espirito Santo','ES');
+insert into Estados
+values (9,'Goias','GO');
+insert into Estados
+values (10,'Maranhao','MA');
+
+CREATE TABLE Clientes(
+ID INT NOT NULL PRIMARY KEY,
+NOME VARCHAR(50) NOT NULL,
+SEXO CHAR(1) NOT NULL)
+;
+insert into clientes 
+values (1,'Josue','M'),
+(2,'Maria','F'),
+(3,'Ana','F'),
+(4,'Mateus','M'),
+(5,'Alice','M');
